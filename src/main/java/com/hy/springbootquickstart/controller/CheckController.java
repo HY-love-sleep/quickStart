@@ -32,8 +32,8 @@ public class CheckController {
 
     @RequestMapping("/check")
     public String check() throws IOException {
-        // checkUserService.checkDetails("C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\A.txt", "C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\B.txt");
-        // checkPetService.checkDetails("C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\C.txt", "C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\D.txt");
+        checkUserService.checkDetails("C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\A.txt", "C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\B.txt");
+        checkPetService.checkDetails("C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\C.txt", "C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\D.txt");
         checkCompareFactory.checkCompare(CheckEnum.USER, "C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\A.txt", "C:\\My_Work\\IdeaProjects\\Scaffolding\\demo\\src\\main\\java\\code_optimization\\B.txt");
         return "hello template";
     }
