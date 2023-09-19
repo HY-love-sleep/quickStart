@@ -1,6 +1,7 @@
-package com.hy.springbootquickstart.service;
+package com.hy.springbootquickstart.service.impl;
 
 import com.hy.springbootquickstart.Enum.CheckEnum;
+import com.hy.springbootquickstart.service.ICheckStrategy;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

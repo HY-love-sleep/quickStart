@@ -1,16 +1,13 @@
 package com.hy.springbootquickstart.controller;
 
 import com.hy.springbootquickstart.Enum.CheckEnum;
-import com.hy.springbootquickstart.service.CheckCompareFactory;
+import com.hy.springbootquickstart.service.impl.CheckCompareFactory;
 import com.hy.springbootquickstart.service.impl.CheckPetServiceImpl;
 import com.hy.springbootquickstart.service.impl.CheckUserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**

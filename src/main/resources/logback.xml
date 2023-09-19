@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
     <property name="app_name" value="hello_world"/>
-    <!--定义文件输出，会根据定义的阈值进行切割，支持自动归档压缩过期日志-->
-    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_PATH}/app.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <!--定义日志文件切割的阈值，本例是 50MB-->
-            <maxFileSize>50MB</maxFileSize>
-            <!--定义日志文件保留时间，本例是每天生成一个日志文件-->
-            <fileNamePattern>${ARCHIVE_PATTERN}</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <!-- zip 压缩生成的归档文件 -->
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>50MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-            <!-- 删除过期文件 -->
-            <cleanHistoryOnStart>true</cleanHistoryOnStart>
-        </rollingPolicy>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
-        </encoder>
-    </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/${app_name}.log</file>
