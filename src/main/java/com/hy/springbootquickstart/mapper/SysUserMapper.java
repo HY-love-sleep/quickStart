@@ -1,4 +1,4 @@
-package com.hy.springbootquickstart.dao;
+package com.hy.springbootquickstart.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hy.springbootquickstart.entity.SysUser;

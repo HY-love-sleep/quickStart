@@ -1,6 +1,6 @@
 package com.hy.springbootquickstart.service.impl;
 
-import com.hy.springbootquickstart.dao.SysUserMapper;
+import com.hy.springbootquickstart.mapper.SysUserMapper;
 import com.hy.springbootquickstart.entity.SysUser;
 import com.hy.springbootquickstart.exception.BusinessException;
 import com.hy.springbootquickstart.service.LoginService;
